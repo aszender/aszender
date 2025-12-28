@@ -1,16 +1,44 @@
-## Hi there 👋
+# Andres Gonzalez
 
-<!--
-**aszender/aszender** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Cloud & Backend Engineer** · Victoria, BC, Canada 🇨🇦
 
-Here are some ideas to get you started:
+Building secure, scalable backend systems with extensive experience in Identity & Access Management (IAM), API development, and enterprise integrations
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### Tech Stack
+
+```
+Backend       Node.js · NestJS · Express · .NET · Python
+Languages     TypeScript · JavaScript · C# · C++
+Databases     PostgreSQL · MongoDB · Oracle · SQL Server
+Cloud         AWS (Lambda, EC2, S3) · Azure (Functions, AD, DevOps)
+Security      OAuth2 · OIDC · JWT · SAML · ADFS · Microsoft Entra ID
+DevOps        Docker · GitHub Actions · CI/CD
+```
+
+---
+
+### Featured Projects
+
+**[Multi-Tenant-IAM-Backend-Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)**  
+Enterprise IAM platform with multi-tenancy, RBAC, and JWT authentication  
+`NestJS` `TypeScript` `PostgreSQL` `Prisma` `Docker`
+
+**[backend-Integration](https://github.com/aszender/backend-Integration)**  
+Fullstack application with JWT auth, input validation, and centralized error handling  
+`Express` `TypeScript` `MongoDB` `Next.js` `Zod`
+
+**[TCValidationC-](https://github.com/aszender/TCValidationC-)**  
+Credit card validator OOP, Rule of Three, and modern C++  
+`C++17` `CMake` `Unit Tests`
+
+---
+
+### Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andres-gonzalez-29132245/)
+
+
+
+
