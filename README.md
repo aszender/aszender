@@ -9,8 +9,8 @@ Building secure, scalable backend systems with extensive experience in Identity 
 ### Tech Stack
 
 ```
-Backend       Node.js · NestJS · Express · .NET · Python · Spring Boot
-Languages     TypeScript · JavaScript · C# · Java · C++
+Backend       Node.js · NestJS · Express · .NET · Spring Boot
+Languages     TypeScript · JavaScript · Python · C# · Java · C++
 Architecture  Microservices · Event-Driven · Domain-Driven Design (DDD)
 Messaging     Apache Kafka · gRPC · REST · GraphQL
 Databases     PostgreSQL · MongoDB · Oracle · SQL Server
