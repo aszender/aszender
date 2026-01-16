@@ -21,6 +21,11 @@ DevOps        Docker · GitHub Actions · CI/CD
 
 ### Featured Projects
 
+**[Enterprise Microservices Platform](https://github.com/aszender/enterprise-microservices-platform)**  
+Production-ready microservices architecture demonstrating enterprise patterns and full-stack implementation  
+`Java 17` `Spring Boot 3` `Apache Kafka` `gRPC` `Redis` `PostgreSQL` `Vue 3` `React 18` `Docker`
+
+
 **[Multi-Tenant-IAM-Backend-Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)**  
 Enterprise IAM platform with multi-tenancy, RBAC, and JWT authentication  
 `NestJS` `TypeScript` `PostgreSQL` `Prisma` `Docker`
