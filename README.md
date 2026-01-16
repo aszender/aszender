@@ -16,7 +16,8 @@ Messaging     Apache Kafka · gRPC · REST · GraphQL
 Databases     PostgreSQL · MongoDB · Oracle · SQL Server
 Cloud         AWS (Lambda, EC2, S3) · Azure (Functions, AD, DevOps)
 Security      OAuth2 · OIDC · JWT · SAML · ADFS · Microsoft Entra ID
-DevOps        Docker · GitHub Actions · CI/CD
+DevOps        Docker ·Jenkins · GitHub Actions · CI/CD
+Frontend      Vue.js · React · Next.js
 ```
 
 ---
