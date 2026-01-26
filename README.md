@@ -9,7 +9,7 @@ Building secure, scalable backend systems with extensive experience in Identity 
 ### Tech Stack
 
 ```
-Backend       Node.js · NestJS · Express · ASP.NET · .NET · Spring Boot · Django
+Backend       NestJS · ASP.NET · Spring Boot · Django
 Languages     TypeScript · JavaScript · Python · C# · Java · C++
 Architecture  Microservices · Event-Driven · Domain-Driven Design (DDD)
 Messaging     Apache Kafka · gRPC · REST · GraphQL
