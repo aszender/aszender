@@ -9,15 +9,17 @@ Building secure, scalable backend systems with extensive experience in Identity 
 ### Tech Stack
 
 ```
-Backend       Node.js · NestJS · Express · .NET · Spring Boot
+Backend       Node.js · NestJS · Express · ASP.NET · .NET · Spring Boot · Django
 Languages     TypeScript · JavaScript · Python · C# · Java · C++
 Architecture  Microservices · Event-Driven · Domain-Driven Design (DDD)
 Messaging     Apache Kafka · gRPC · REST · GraphQL
 Databases     PostgreSQL · MongoDB · Oracle · SQL Server
 Cloud         AWS (Lambda, EC2, S3) · Azure (Functions, AD, DevOps)
 Security      OAuth2 · OIDC · JWT · SAML · ADFS · Microsoft Entra ID
-DevOps        Docker ·Jenkins · GitHub Actions · CI/CD
+DevOps        Docker · Jenkins · GitHub Actions · CI/CD
 Frontend      Vue.js · React · Next.js
+AI/ML         Machine Learning · NLP · LLMs
+Testing       TDD · Jest · JUnit · xUnit · pytest
 ```
 
 ---
