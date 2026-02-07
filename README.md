@@ -1,8 +1,7 @@
 # Andres Gonzalez
+**Software Engineer | Backend & Full-Stack | Distributed Systems, IAM, Cloud**
 
-**Software Engineer**
-
-Building secure, scalable backend and full-stack systems with a strong focus on Identity & Access Management (IAM), distributed architectures, and production-ready enterprise integrations.
+Software engineer focused on building production-ready backend and full-stack systems, with strong experience in identity platforms (IAM), distributed architectures, and enterprise integrations.
 
 ---
 
@@ -16,23 +15,11 @@ Databases: PostgreSQL · MongoDB · Oracle · SQL Server
 Cloud & DevOps: AWS · Azure · Docker · Jenkins · GitHub Actions · CI/CD  
 Security: OAuth2 · OIDC · JWT · SAML · ADFS · Microsoft Entra ID  
 Frontend: Vue.js · React · Next.js  
-AI/ML: ML · NLP · LLMs
+AI Integration: LLM API integration · Chatbot backend development
 
 ---
 
 ## Featured Projects
-
-### [Multi-Tenant-IAM-Backend-Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
-Enterprise IAM backend designed to model real-world identity and access control challenges, with strong emphasis on tenant isolation and security boundaries.
-
-**Key focus areas**
-- Multi-tenant architecture with strict data isolation
-- Role-Based Access Control (RBAC) and JWT-based authentication
-- Designed to reflect enterprise IAM patterns and security constraints
-
-`NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `Docker`
-
----
 
 ### [Enterprise Microservices Platform](https://github.com/aszender/enterprise-microservices-platform)
 Production-oriented microservices architecture showcasing enterprise integration patterns and full-stack system design.
@@ -43,6 +30,18 @@ Production-oriented microservices architecture showcasing enterprise integration
 - Designed around scalability, resilience, and maintainability trade-offs
 
 `Java 17` · `Spring Boot 3` · `Apache Kafka` · `gRPC` · `Redis` · `PostgreSQL` · `Vue 3` · `React 18` · `Docker`
+
+---
+
+### [Multi-Tenant-IAM-Backend-Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
+Enterprise IAM backend designed to model real-world identity and access control challenges, with strong emphasis on tenant isolation and security boundaries.
+
+**Key focus areas**
+- Multi-tenant architecture with strict data isolation
+- Role-Based Access Control (RBAC) and JWT-based authentication
+- Designed to reflect enterprise IAM patterns and security constraints
+
+`NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `Docker`
 
 ---
 
