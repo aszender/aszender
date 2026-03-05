@@ -21,18 +21,6 @@ AI Integration: LLM API integration · Chatbot backend development
 
 ## Featured Projects
 
-### [Enterprise Microservices Platform](https://github.com/aszender/enterprise-microservices-platform)
-Production-oriented microservices architecture showcasing enterprise integration patterns and full-stack system design.
-
-**Key focus areas**
-- Service-to-service communication using Kafka and gRPC
-- Clear separation of domain, application, and infrastructure layers
-- Designed around scalability, resilience, and maintainability trade-offs
-
-`Java 17` · `Spring Boot 3` · `Apache Kafka` · `gRPC` · `Redis` · `PostgreSQL` · `Vue 3` · `React 18` · `Docker`
-
----
-
 ### [Multi-Tenant-IAM-Backend-Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
 Enterprise IAM backend designed to model real-world identity and access control challenges, with strong emphasis on tenant isolation and security boundaries.
 
@@ -42,6 +30,17 @@ Enterprise IAM backend designed to model real-world identity and access control 
 - Designed to reflect enterprise IAM patterns and security constraints
 
 `NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `Docker`
+
+---
+### [Enterprise Microservices Platform](https://github.com/aszender/enterprise-microservices-platform)
+Production-oriented microservices architecture showcasing enterprise integration patterns and full-stack system design.
+
+**Key focus areas**
+- Service-to-service communication using Kafka and gRPC
+- Clear separation of domain, application, and infrastructure layers
+- Designed around scalability, resilience, and maintainability trade-offs
+
+`Java 17` · `Spring Boot 3` · `Apache Kafka` · `gRPC` · `Redis` · `PostgreSQL` · `Vue 3` · `React 18` · `Docker`
 
 ---
 
