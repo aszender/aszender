@@ -8,7 +8,7 @@ Software engineer focused on building production-ready backend and full-stack sy
 ## Tech Stack
 
 Backend: NestJS · ASP.NET Core · Spring Boot · Django  
-Languages: Java · C# · TypeScript · Python · JavaScript · C++  
+Languages: Java · C# · TypeScript · GO · Python · C++  
 Architecture: Microservices · Event-Driven · DDD · TDD · Clean Architecture  
 APIs & Messaging: Kafka · gRPC · REST · GraphQL  
 Databases: PostgreSQL · MongoDB · Oracle · SQL Server  
