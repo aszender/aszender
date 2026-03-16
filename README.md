@@ -7,15 +7,15 @@ Software engineer focused on building production-ready backend and full-stack sy
 
 ## Tech Stack
 
-Backend: NestJS · ASP.NET Core · Spring Boot · Django  
-Languages: Java · C# · TypeScript · Go · Python  
-Architecture: Microservices · Event-Driven · DDD · TDD · Clean Architecture  
-APIs & Messaging: Kafka · gRPC · REST · GraphQL  
-Databases: PostgreSQL · MongoDB · Oracle · SQL Server  
-Cloud & DevOps: AWS · Azure · Docker · Jenkins · GitHub Actions · CI/CD  
-Security: OAuth2 · OIDC · JWT · SAML · ADFS · Microsoft Entra ID  
-Frontend: Vue.js · React · Next.js  
-AI Integration: LLM API integration · Chatbot backend development
+**Backend:** NestJS · ASP.NET Core · Spring Boot · Django  
+**Languages:** Java · C# · TypeScript · Go · Python · C++  
+**Architecture:** Microservices · Event-Driven · DDD · TDD · Clean Architecture  
+**APIs & Messaging:** Kafka · gRPC · REST · GraphQL  
+**Databases:** PostgreSQL · MongoDB · Oracle · SQL Server  
+**Cloud & DevOps:** AWS · Azure · Docker · Jenkins · GitHub Actions · CI/CD  
+**Security:** OAuth2 · OIDC · JWT · SAML · ADFS · Microsoft Entra ID  
+**Frontend:** Vue.js · React · Next.js  
+**AI Integration:** LLM API integration · Chatbot backend development
 
 ---
 
