@@ -8,7 +8,7 @@ Software engineer focused on building production-ready backend and full-stack sy
 ## Tech Stack
 
 Backend: NestJS · ASP.NET Core · Spring Boot · Django  
-Languages: Java · C# · TypeScript · GO · Python · C++  
+Languages: Java · C# · TypeScript · Go · Python  
 Architecture: Microservices · Event-Driven · DDD · TDD · Clean Architecture  
 APIs & Messaging: Kafka · gRPC · REST · GraphQL  
 Databases: PostgreSQL · MongoDB · Oracle · SQL Server  
@@ -32,6 +32,20 @@ Enterprise IAM backend designed to model real-world identity and access control 
 `NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `Docker`
 
 ---
+
+### [PayFlow](https://github.com/aszender/Payflow)
+Payment gateway API in Go implementing real-world fintech patterns: idempotent transactions, transactional outbox with Kafka, circuit breaker, state machine with audit trail, and hexagonal architecture. Designed around the trade-offs required in regulated, high-reliability environments.
+
+**Key focus areas**
+- Idempotent payment processing with atomic DB transactions (payment + audit + outbox in one commit)
+- Circuit breaker + retry with exponential backoff and jitter on bank API calls
+- State machine enforcement with full audit trail per transaction
+- Transactional outbox pattern for reliable event delivery to Kafka
+
+`Go` · `PostgreSQL` · `Kafka` · `Docker` · `chi` · `slog`
+
+---
+
 ### [Enterprise Microservices Platform](https://github.com/aszender/enterprise-microservices-platform)
 Production-oriented microservices architecture showcasing enterprise integration patterns and full-stack system design.
 
@@ -56,18 +70,6 @@ Full-stack application focused on API robustness, validation, and consistent err
 
 ---
 
-### [TCValidationC-](https://github.com/aszender/TCValidationC-)
-C++ project emphasizing object-oriented design, correctness, and modern C++ standards.
-
-**Key focus areas**
-- Rule of Three and object lifecycle management
-- Emphasis on correctness through unit testing
-- Clean, maintainable C++17 codebase
-
-`C++17` · `CMake` · `Unit Tests`
-
----
-
 ## Engineering Approach
 
 - Prioritize correctness, maintainability, and clarity over feature quantity  
@@ -79,8 +81,6 @@ C++ project emphasizing object-oriented design, correctness, and modern C++ stan
 ## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andres-gonzalez-29132245/)
-
-
 
 
 
