@@ -34,15 +34,16 @@ Enterprise IAM backend designed to model real-world identity and access control 
 ---
 
 ### [PayFlow](https://github.com/aszender/Payflow)
-Payment gateway API in Go implementing real-world fintech patterns: idempotent transactions, transactional outbox with Kafka, circuit breaker, state machine with audit trail, and hexagonal architecture. Designed around the trade-offs required in regulated, high-reliability environments.
+Payment gateway API in Go simulating how fintech systems process bank payments — full transaction lifecycle with the reliability and auditability expected in regulated environments.
 
 **Key focus areas**
 - Idempotent payment processing with atomic DB transactions (payment + audit + outbox in one commit)
 - Circuit breaker + retry with exponential backoff and jitter on bank API calls
 - State machine enforcement with full audit trail per transaction
 - Transactional outbox pattern for reliable event delivery to Kafka
+- Redis + Lua atomic scripts for distributed rate limiting and idempotency coordination
 
-`Go` · `PostgreSQL` · `Kafka` · `Docker` · `chi` · `slog`
+`Go` · `PostgreSQL` · `Redis` · `Lua` · `Kafka` · `Docker` · `chi` · `slog`
 
 ---
 
