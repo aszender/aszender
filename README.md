@@ -22,13 +22,14 @@ Software engineer focused on building production-ready backend and full-stack sy
 ## Featured Projects
 
 ### [Multi-Tenant-IAM-Backend-Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
-Enterprise IAM backend designed to model real-world identity and access control challenges, with strong emphasis on tenant isolation and security boundaries.
-
+Enterprise IAM backend with strict tenant isolation — every query scoped by organization from JWT to repository layer, hierarchical RBAC, and transactional user provisioning.
+ 
 **Key focus areas**
-- Multi-tenant architecture with strict data isolation
-- Role-Based Access Control (RBAC) and JWT-based authentication
-- Designed to reflect enterprise IAM patterns and security constraints
-
+- Multi-tenant data isolation enforced at the repository level (compound org + resource queries, not just controller guards)
+- Hierarchical RBAC with ranked roles (ORG_ADMIN → ORG_USER → READ_ONLY) and last-admin protection
+- Atomic registration: organization + user + membership created in a single Prisma transaction
+- Global exception filter with structured error responses and centralized error handling
+ 
 `NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `Docker`
 
 ---
