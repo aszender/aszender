@@ -1,7 +1,7 @@
 # Andres Gonzalez
-**Software Engineer | Backend & Full-Stack | Distributed Systems, IAM, Cloud**
+**Software Developer | Backend & Full-Stack | Distributed Systems, IAM, Cloud**
 
-Software engineer focused on building production-ready backend and full-stack systems, with strong experience in identity platforms (IAM), distributed architectures, and enterprise integrations.
+Software Developer focused on building production-ready backend and full-stack systems, with strong experience in identity platforms (IAM), distributed architectures, and enterprise integrations.
 
 ---
 
