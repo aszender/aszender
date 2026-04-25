@@ -34,6 +34,17 @@ Enterprise IAM backend with strict tenant isolation — every query scoped by or
 
 ---
 
+### [AI SOC Investigator](https://github.com/aszender/AI-Soc-Alert)
+Multi-agent AI system for autonomous security alert investigation — deterministic rules for known threats, LLM-powered triage for novel attacks, governed response playbook generation, and MCP tool exposure for AI host integration.
+
+**Key focus areas**
+- Multi-agent supervisor pattern with triage, enrichment, and response agents under least-privilege permissions and token budget governance
+- Deterministic rules engine for known patterns before LLM escalation, with input/output guardrails for prompt injection and hallucination detection
+- Human-in-the-loop approval gates for destructive actions with structured audit trail and trace IDs
+- MCP server exposing investigation tools to AI hosts (Claude Desktop, VS Code, MCP Inspector)
+
+`Python` · `FastAPI` · `MCP` · `LLM Integration` · `Multi-Agent` · `Pydantic` · `Docker`
+
 ### [PayFlow](https://github.com/aszender/Payflow)
 Payment gateway API in Go simulating how fintech systems process bank payments — full transaction lifecycle with the reliability and auditability expected in regulated environments.
 
@@ -57,20 +68,6 @@ Production-oriented microservices architecture showcasing enterprise integration
 - Designed around scalability, resilience, and maintainability trade-offs
 
 `Java 17` · `Spring Boot 3` · `Apache Kafka` · `gRPC` · `Redis` · `PostgreSQL` · `Vue 3` · `React 18` · `Docker`
-
----
-
-### [backend-Integration](https://github.com/aszender/backend-Integration)
-Full-stack application focused on API robustness, validation, and consistent error handling.
-
-**Key focus areas**
-- JWT-based authentication and authorization
-- Centralized error handling and input validation
-- Practical backend–frontend integration
-
-`Express` · `TypeScript` · `MongoDB` · `Next.js` · `Zod`
-
----
 
 ## Engineering Approach
 
