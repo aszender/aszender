@@ -21,16 +21,18 @@ Software Developer focused on building production-ready backend and full-stack s
 
 ## Featured Projects
 
-### [Multi-Tenant-IAM-Backend-Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
-Enterprise IAM backend with strict tenant isolation — every query scoped by organization from JWT to repository layer, hierarchical RBAC, and transactional user provisioning.
- 
+### [Multi-Tenant IAM Backend Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
+
+Production-oriented multi-tenant IAM backend focused on tenant isolation, permission-based RBAC, refresh token rotation, auditability, and secure API boundaries.
+
 **Key focus areas**
-- Multi-tenant data isolation enforced at the repository level (compound org + resource queries, not just controller guards)
-- Hierarchical RBAC with ranked roles (ORG_ADMIN → ORG_USER → READ_ONLY) and last-admin protection
-- Atomic registration: organization + user + membership created in a single Prisma transaction
-- Global exception filter with structured error responses and centralized error handling
- 
-`NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `Docker`
+- Tenant isolation enforced across guards, services, and repository-level queries, preventing cross-tenant object access.
+- Permission-based RBAC with tenant-scoped memberships, roles, permissions, and explicit route authorization metadata.
+- Secure authentication flow with JWT access tokens, opaque refresh token rotation, hashed token storage, reuse denial, and expiration checks.
+- Audit events for authentication, tenant, membership, role, and permission-sensitive mutations.
+- Operational backend patterns including correlation IDs, safe error responses, strict validation, health/readiness checks, metrics, OpenAPI, and security-focused tests.
+
+`NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `JWT` · `RBAC` · `Docker`
 
 ---
 
