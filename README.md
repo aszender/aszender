@@ -23,27 +23,27 @@ Software Developer focused on building production-ready backend and full-stack s
 
 [Multi-Tenant IAM Backend Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
 
-Production-oriented multi-tenant IAM backend focused on tenant isolation, permission-based RBAC, refresh token rotation, auditability, and secure API boundaries.
+Multi-tenant IAM backend focused on secure organization boundaries — tenant isolation, permission-based RBAC, refresh token rotation, membership modeling, auditability, and protected API access across multiple organizations.
 
 Key focus areas
 
-* Tenant isolation enforced across guards, services, and repository-level queries, preventing cross-tenant object access.
-* Permission-based RBAC with tenant-scoped memberships, roles, permissions, and explicit route authorization metadata.
-* Secure authentication flow with JWT access tokens, opaque refresh token rotation, hashed token storage, reuse denial, and expiration checks.
-* Audit events for authentication, tenant, membership, role, and permission-sensitive mutations.
-* Operational backend patterns including correlation IDs, safe error responses, strict validation, health/readiness checks, metrics, OpenAPI, and security-focused tests.
+* Tenant isolation enforced across guards, services, and repository-level queries to prevent cross-tenant object access
+* Permission-based RBAC with tenant-scoped memberships, roles, permissions, and explicit route authorization metadata
+* Secure authentication flow with JWT access tokens, opaque refresh token rotation, hashed token storage, reuse denial, and expiration checks
+* Audit events for authentication, tenant, membership, role, and permission-sensitive mutations
+* Operational backend patterns including correlation IDs, safe error responses, strict validation, health/readiness checks, metrics, OpenAPI, and security-focused tests
 
 `NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `JWT` · `RBAC` · `Docker`
 
 [Commerce Sync Platform](https://github.com/aszender/commerce-sync-platform)
 
-Production-oriented integration backend for syncing orders between commerce platforms and downstream systems — webhook ingestion, scheduled polling, and resilient vendor sync patterns built around real-world failure modes.
+Integration backend for syncing commerce orders across unreliable external platforms — webhook ingestion, scheduled polling, vendor connectors, rate limits, replayable failures, and canonical order mapping.
 
 Key focus areas
 
 * HMAC-validated webhook ingestion with durable inbox, Redis idempotency, and Kafka handoff for fast acknowledgement and async processing
-* Scheduled polling with per-tenant Redis locks, durable sync watermarks, and out-of-order protection via remote update timestamps
-* Vendor connector pattern hiding auth, pagination, and rate limits behind a stable canonical Order mapping
+* Scheduled polling with per-tenant Redis locks, durable sync watermarks, and out-of-order protection using remote update timestamps
+* Vendor connector pattern hiding auth, pagination, rate limits, and provider-specific fields behind a stable canonical Order model
 * Token-bucket rate limiting in atomic Redis Lua, bounded retries, and durable DLQ with auditable replay endpoint
 * OpenTelemetry traces and metrics across API, worker, and scheduler roles, wired to Jaeger, Prometheus, and Grafana
 
@@ -51,28 +51,29 @@ Key focus areas
 
 [PayFlow](https://github.com/aszender/Payflow)
 
-Payment gateway API in Go simulating how fintech systems process bank payments — full transaction lifecycle with the reliability and auditability expected in regulated environments.
+Go payment gateway API modeling a regulated payment lifecycle — idempotent commands, state-machine transitions, bank failure handling, distributed rate limiting, and full audit history.
 
 Key focus areas
 
-* Idempotent payment processing with atomic DB transactions (payment + audit + outbox in one commit)
-* Circuit breaker + retry with exponential backoff and jitter on bank API calls
-* State machine enforcement with full audit trail per transaction
-* Transactional outbox pattern for reliable event delivery to Kafka
+* Idempotent payment processing with atomic database transactions for payment state, audit trail, and outbox event persistence
+* Payment lifecycle modeled through explicit state transitions to prevent invalid status changes and duplicate side effects
+* Circuit breaker and retry with exponential backoff and jitter for simulated bank API failures
+* Transactional outbox pattern for reliable payment event delivery to Kafka
 * Redis + Lua atomic scripts for distributed rate limiting and idempotency coordination
 
 `Go` · `PostgreSQL` · `Redis` · `Lua` · `Kafka` · `Docker` · `chi` · `slog`
 
 [AI SOC Investigator](https://github.com/aszender/AI-Soc-Alert)
 
-Multi-agent AI system for autonomous security alert investigation — deterministic rules for known threats, LLM-powered triage for novel attacks, governed response playbook generation, and MCP tool exposure for AI host integration.
+Governed AI security investigation system — deterministic threat rules, LLM-assisted triage, prompt-injection guardrails, human approval gates, MCP tooling, and auditable incident response workflows.
 
 Key focus areas
 
 * Multi-agent supervisor pattern with triage, enrichment, and response agents under least-privilege permissions and token budget governance
-* Deterministic rules engine for known patterns before LLM escalation, with input/output guardrails for prompt injection and hallucination detection
+* Deterministic rules engine for known threat patterns before LLM escalation, reducing unnecessary model calls and hallucination risk
+* Input/output guardrails for prompt injection, unsafe actions, and unsupported security conclusions
 * Human-in-the-loop approval gates for destructive actions with structured audit trail and trace IDs
-* MCP server exposing investigation tools to AI hosts (Claude Desktop, VS Code, MCP Inspector)
+* MCP server exposing investigation tools to AI hosts such as Claude Desktop, VS Code, and MCP Inspector
 
 `Python` · `FastAPI` · `MCP` · `LLM Integration` · `Multi-Agent` · `Pydantic` · `Docker`
 
