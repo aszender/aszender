@@ -78,15 +78,17 @@ Key focus areas
 
 [Enterprise Microservices Platform](https://github.com/aszender/enterprise-microservices-platform)
 
-Production-oriented microservices architecture showcasing enterprise integration patterns and full-stack system design.
+Java/Spring microservices reference implementation focused on distributed consistency — transactional outbox, Kafka inbox/retry/DLQ, gRPC reservation flows, concurrency-safe inventory, and reproducible integration tests.
 
 Key focus areas
 
-* Service-to-service communication using Kafka and gRPC
-* Clear separation of domain, application, and infrastructure layers
-* Designed around scalability, resilience, and maintainability trade-offs
+* Transactional outbox for reliable Kafka publishing across products and orders without losing events after database commits
+* Kafka inbox idempotency with retry/DLQ handling for safe event consumption under at-least-once delivery
+* Concurrency-safe inventory reservations using atomic SQL updates, order-level idempotency, and PostgreSQL-backed tests
+* Service-to-service communication using Kafka for asynchronous events and gRPC for synchronous reservation flows
+* Production-style backend foundations: Flyway migrations, BigDecimal money handling, JWT security, OpenTelemetry, Prometheus, Grafana, and CI
 
-`Java 17` · `Spring Boot 3` · `Apache Kafka` · `gRPC` · `Redis` · `PostgreSQL` · `Vue 3` · `React 18` · `Docker`
+`Java` · `Spring Boot` · `Apache Kafka` · `gRPC` · `PostgreSQL` · `Redis` · `Flyway` · `Testcontainers` · `OpenTelemetry` · `Docker`
 
 ## Engineering Approach
 
