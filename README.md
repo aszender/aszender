@@ -1,7 +1,12 @@
 # Andres Gonzalez
+
 **Software Developer | Backend & Full-Stack | Distributed Systems, IAM, Cloud**
 
-Software Developer focused on building production-ready backend and full-stack systems, with strong experience in identity platforms (IAM), distributed architectures, and enterprise integrations.
+Software Developer building secure and maintainable backend and full-stack systems, with experience in identity platforms, distributed architectures, enterprise integrations, and cloud-based applications.
+
+I work across multiple languages and ecosystems, applying consistent engineering principles around correctness, security, observability, testing, and explicit architectural boundaries.
+
+Based in Vancouver, Canada.
 
 ---
 
@@ -21,80 +26,104 @@ Software Developer focused on building production-ready backend and full-stack s
 
 ## Featured Projects
 
-[Multi-Tenant IAM Backend Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
+### [Reconduit](https://github.com/aszender/Reconduit)
 
-Multi-tenant IAM backend focused on secure organization boundaries — tenant isolation, permission-based RBAC, refresh token rotation, membership modeling, auditability, and protected API access across multiple organizations.
+Open-source, multi-tenant data reconciliation platform with durable processing, configurable matching, enterprise authentication, and an operations console.
 
-Key focus areas
+- Durable ingestion with idempotency, retries, dead-letter handling, leases, and processing checkpoints
+- Configurable schemas, mappings, matching rules, field authority, and explainable reconciliation evidence
+- Operator workflows for investigating differences, recording decisions, and reviewing audit history
+- Microsoft Entra multi-tenant authentication with verified admin-consent onboarding and application roles
+- Privacy-safe OpenTelemetry, HTTP hardening, tenant-aware rate limiting, Docker, and reproducible CI
+- 176 automated tests across backend, persistence, architecture, worker, and frontend layers
 
-* Tenant isolation enforced across guards, services, and repository-level queries to prevent cross-tenant object access
-* Permission-based RBAC with tenant-scoped memberships, roles, permissions, and explicit route authorization metadata
-* Secure authentication flow with JWT access tokens, opaque refresh token rotation, hashed token storage, reuse denial, and expiration checks
-* Audit events for authentication, tenant, membership, role, and permission-sensitive mutations
-* Operational backend patterns including correlation IDs, safe error responses, strict validation, health/readiness checks, metrics, OpenAPI, and security-focused tests
+`C#` · `ASP.NET Core` · `.NET 10` · `PostgreSQL` · `React` · `TypeScript` · `Entra ID` · `OpenTelemetry` · `Docker`
 
-`NestJS` · `TypeScript` · `PostgreSQL` · `Prisma` · `JWT` · `RBAC` · `Docker`
+---
 
-[Commerce Sync Platform](https://github.com/aszender/commerce-sync-platform)
+### [PayFlow](https://github.com/aszender/Payflow)
 
-Integration backend for syncing commerce orders across unreliable external platforms — webhook ingestion, scheduled polling, vendor connectors, rate limits, replayable failures, and canonical order mapping.
+Go payment backend modeling reliable payment processing under concurrency and external service failure.
 
-Key focus areas
+- Idempotent payment commands and explicit lifecycle transitions
+- Atomic persistence of payment state, audit history, and transactional outbox events
+- Kafka publishing through a bounded-concurrency outbox worker
+- Circuit breaker, exponential backoff, jitter, and simulated bank failure handling
+- Redis and Lua for distributed rate limiting and idempotency coordination
+- CI with linting, vulnerability analysis, integration tests, race detection, and Docker builds
 
-* HMAC-validated webhook ingestion with durable inbox, Redis idempotency, and Kafka handoff for fast acknowledgement and async processing
-* Scheduled polling with per-tenant Redis locks, durable sync watermarks, and out-of-order protection using remote update timestamps
-* Vendor connector pattern hiding auth, pagination, rate limits, and provider-specific fields behind a stable canonical Order model
-* Token-bucket rate limiting in atomic Redis Lua, bounded retries, and durable DLQ with auditable replay endpoint
-* OpenTelemetry traces and metrics across API, worker, and scheduler roles, wired to Jaeger, Prometheus, and Grafana
+`Go` · `PostgreSQL` · `Kafka` · `Redis` · `Lua` · `OpenTelemetry` · `Docker`
 
-`NestJS` · `TypeScript` · `PostgreSQL` · `Drizzle` · `Kafka` · `Redis` · `OpenTelemetry` · `Docker`
+---
 
-[PayFlow](https://github.com/aszender/Payflow)
+### [Enterprise Microservices Platform](https://github.com/aszender/enterprise-microservices-platform)
 
-Go payment gateway API modeling a regulated payment lifecycle — idempotent commands, state-machine transitions, bank failure handling, distributed rate limiting, and full audit history.
+Java and Spring platform demonstrating consistency and failure handling across distributed commerce services.
 
-Key focus areas
+- Product, order, and inventory bounded contexts
+- Transactional outbox for reliable event publishing after database commits
+- Idempotent Kafka inbox with retries and dead-letter handling
+- Concurrency-safe inventory reservations backed by atomic database operations
+- Kafka for asynchronous events and gRPC for synchronous reservation workflows
+- PostgreSQL integration tests, Testcontainers, Flyway migrations, observability, and CI
 
-* Idempotent payment processing with atomic database transactions for payment state, audit trail, and outbox event persistence
-* Payment lifecycle modeled through explicit state transitions to prevent invalid status changes and duplicate side effects
-* Circuit breaker and retry with exponential backoff and jitter for simulated bank API failures
-* Transactional outbox pattern for reliable payment event delivery to Kafka
-* Redis + Lua atomic scripts for distributed rate limiting and idempotency coordination
+`Java` · `Spring Boot` · `Kafka` · `gRPC` · `PostgreSQL` · `Redis` · `Flyway` · `Testcontainers`
 
-`Go` · `PostgreSQL` · `Redis` · `Lua` · `Kafka` · `Docker` · `chi` · `slog`
+---
 
-[AI SOC Investigator](https://github.com/aszender/AI-Soc-Alert)
+### [Commerce Sync Platform](https://github.com/aszender/commerce-sync-platform)
 
-Governed AI security investigation system — deterministic threat rules, LLM-assisted triage, prompt-injection guardrails, human approval gates, MCP tooling, and auditable incident response workflows.
+Integration backend for synchronizing commerce orders across unreliable external providers.
 
-Key focus areas
+- HMAC-validated webhook ingestion with durable inbox and idempotent processing
+- Scheduled polling with distributed locks, durable watermarks, and out-of-order protection
+- Provider abstraction for authentication, pagination, rate limits, and canonical order mapping
+- Kafka-based asynchronous processing with bounded retries and replayable dead-letter records
+- Redis and Lua token-bucket rate limiting
+- Operational tracing and metrics across API, worker, and scheduler processes
 
-* Multi-agent supervisor pattern with triage, enrichment, and response agents under least-privilege permissions and token budget governance
-* Deterministic rules engine for known threat patterns before LLM escalation, reducing unnecessary model calls and hallucination risk
-* Input/output guardrails for prompt injection, unsafe actions, and unsupported security conclusions
-* Human-in-the-loop approval gates for destructive actions with structured audit trail and trace IDs
-* MCP server exposing investigation tools to AI hosts such as Claude Desktop, VS Code, and MCP Inspector
+`TypeScript` · `NestJS` · `PostgreSQL` · `Drizzle` · `Kafka` · `Redis` · `OpenTelemetry` · `Docker`
 
-`Python` · `FastAPI` · `MCP` · `LLM Integration` · `Multi-Agent` · `Pydantic` · `Docker`
+---
 
-[Enterprise Microservices Platform](https://github.com/aszender/enterprise-microservices-platform)
+### [Multi-Tenant IAM Platform](https://github.com/aszender/Multi-Tenant-IAM-Backend-Platform)
 
-Java/Spring microservices reference implementation focused on distributed consistency — transactional outbox, Kafka inbox/retry/DLQ, gRPC reservation flows, concurrency-safe inventory, and reproducible integration tests.
+Tenant-scoped identity and access-management backend with explicit authorization and data-isolation boundaries.
 
-Key focus areas
+- Organization isolation enforced across guards, services, and repository queries
+- Permission-based RBAC with tenant-local memberships, roles, and route authorization
+- Short-lived JWT access tokens and opaque refresh-token rotation
+- Hashed token storage, expiration checks, revocation, and reuse denial
+- Argon2 password hashing and security-sensitive audit events
+- PostgreSQL-backed CI tests covering authorization and cross-tenant access attempts
 
-* Transactional outbox for reliable Kafka publishing across products and orders without losing events after database commits
-* Kafka inbox idempotency with retry/DLQ handling for safe event consumption under at-least-once delivery
-* Concurrency-safe inventory reservations using atomic SQL updates, order-level idempotency, and PostgreSQL-backed tests
-* Service-to-service communication using Kafka for asynchronous events and gRPC for synchronous reservation flows
-* Production-style backend foundations: Flyway migrations, BigDecimal money handling, JWT security, OpenTelemetry, Prometheus, Grafana, and CI
+`TypeScript` · `NestJS` · `PostgreSQL` · `Prisma` · `JWT` · `RBAC` · `Argon2` · `Docker`
 
-`Java` · `Spring Boot` · `Apache Kafka` · `gRPC` · `PostgreSQL` · `Redis` · `Flyway` · `Testcontainers` · `OpenTelemetry` · `Docker`
+---
+
+### [AI SOC Investigator](https://github.com/aszender/AI-Soc-Alert)
+
+Reference implementation for governed, LLM-assisted security alert investigation.
+
+- Deterministic threat rules before LLM escalation
+- Supervisor-led triage, enrichment, and response workflows
+- Input guardrails for prompt injection and output validation for unsupported conclusions
+- Token-budget governance and human approval gates for high-risk actions
+- MCP tools for integration with compatible AI hosts
+- Traceable investigation decisions exposed through FastAPI
+
+`Python` · `FastAPI` · `MCP` · `LLM Integration` · `Pydantic` · `pytest` · `Docker`
+
+---
 
 ## Engineering Approach
 
 - Prioritize correctness, maintainability, and clarity over feature quantity  
 - Make explicit design decisions with well-defined boundaries  
+- Design failure behavior as deliberately as success behavior  
+- Prefer idempotent operations and explicit state transitions  
+- Keep distributed side effects observable and recoverable  
+- Test business invariants, isolation, concurrency, and integration boundaries  
 - Apply the same architectural and testing principles across multiple languages and stacks  
 
 ---
