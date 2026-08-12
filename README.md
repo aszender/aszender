@@ -1,10 +1,10 @@
 # Andres Gonzalez
 
-**Software Developer | Backend & Full-Stack | Distributed Systems, IAM, Cloud**
+**Software Developer | Backend & Distributed Systems | IAM, Cloud & Site Reliability**
 
-Software Developer building secure and maintainable backend and full-stack systems, with experience in identity platforms, distributed architectures, enterprise integrations, and cloud-based applications.
+Software Developer building and operating secure, reliable, and maintainable backend and full-stack systems. My experience includes distributed systems, identity platforms, enterprise integrations, cloud applications, observability, production troubleshooting, incident response, and operational automation.
 
-I work across multiple languages and ecosystems, applying consistent engineering principles around correctness, security, observability, testing, and explicit architectural boundaries.
+I work across multiple languages and ecosystems, applying consistent development principles around correctness, security, reliability, testing, and clear architectural boundaries.
 
 Based in Vancouver, Canada.
 
@@ -17,7 +17,8 @@ Based in Vancouver, Canada.
 **Architecture:** Microservices · Event-Driven · DDD · TDD · Clean Architecture  
 **APIs & Messaging:** Kafka · gRPC · REST · GraphQL  
 **Databases:** PostgreSQL · MongoDB · Oracle · SQL Server  
-**Cloud & DevOps:** AWS · Azure · Docker · Jenkins · GitHub Actions · CI/CD  
+**Cloud & DevOps:** AWS · Azure · GCP · Terraform · Infrastructure as Code (IaC) · Docker · Kubernetes · Jenkins · GitHub Actions · CI/CD  
+**Site Reliability:** Linux · Observability · Incident Response · Prometheus · Grafana · OpenTelemetry · Health Checks · Resilience Patterns  
 **Security:** OAuth2 · OIDC · JWT · SAML · ADFS · Microsoft Entra ID  
 **Frontend:** Vue.js · React · Next.js  
 **AI Integration:** LLM API integration · Chatbot backend development
@@ -49,10 +50,10 @@ Go payment backend modeling reliable payment processing under concurrency and ex
 - Atomic persistence of payment state, audit history, and transactional outbox events
 - Kafka publishing through a bounded-concurrency outbox worker
 - Circuit breaker, exponential backoff, jitter, and simulated bank failure handling
-- Redis and Lua for distributed rate limiting and idempotency coordination
-- CI with linting, vulnerability analysis, integration tests, race detection, and Docker builds
+- Prometheus metrics, a pre-provisioned Grafana dashboard, OpenTelemetry tracing through Jaeger, and health/readiness checks
+- Kubernetes manifests for a local or single-node stack plus CI with integration tests, race detection, vulnerability analysis, and Docker build verification
 
-`Go` · `PostgreSQL` · `Kafka` · `Redis` · `Lua` · `OpenTelemetry` · `Docker`
+`Go` · `PostgreSQL` · `Kafka` · `Redis` · `Kubernetes` · `Prometheus` · `Grafana` · `Jaeger` · `OpenTelemetry` · `Docker`
 
 ---
 
@@ -80,9 +81,9 @@ Integration backend for synchronizing commerce orders across unreliable external
 - Provider abstraction for authentication, pagination, rate limits, and canonical order mapping
 - Kafka-based asynchronous processing with bounded retries and replayable dead-letter records
 - Redis and Lua token-bucket rate limiting
-- Operational tracing and metrics across API, worker, and scheduler processes
+- Prometheus alerts, SLO targets, Grafana dashboards, and operational tracing across API, worker, and scheduler processes
 
-`TypeScript` · `NestJS` · `PostgreSQL` · `Drizzle` · `Kafka` · `Redis` · `OpenTelemetry` · `Docker`
+`TypeScript` · `NestJS` · `PostgreSQL` · `Kafka` · `Redis` · `Prometheus` · `Grafana` · `OpenTelemetry` · `Docker`
 
 ---
 
@@ -116,21 +117,18 @@ Reference implementation for governed, LLM-assisted security alert investigation
 
 ---
 
-## Engineering Approach
+## Development Approach
 
-- Prioritize correctness, maintainability, and clarity over feature quantity  
+- Prioritize correctness, maintainability, reliability, and clarity over feature quantity  
 - Make explicit design decisions with well-defined boundaries  
 - Design failure behavior as deliberately as success behavior  
 - Prefer idempotent operations and explicit state transitions  
 - Keep distributed side effects observable and recoverable  
 - Test business invariants, isolation, concurrency, and integration boundaries  
-- Apply the same architectural and testing principles across multiple languages and stacks  
+- Apply consistent architectural and testing principles across multiple languages and stacks  
 
 ---
 
 ## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andres-gonzalez-29132245/)
-
-
-
